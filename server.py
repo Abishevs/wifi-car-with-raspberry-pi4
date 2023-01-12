@@ -8,10 +8,10 @@ screenshot_dir = "static/screenshots"
 # screenshot_dir = "static/test_screenshots" # For debbuging and dev
 # pi_camera = VideoCamera(flip=False) # flip pi camera if upside down.
 
-arduino = serial.Serial('/dev/ttyS0') # Port is usb ports name
+# arduino = serial.Serial('/dev/ttyS0') # Port is usb ports name
 # arduino = serial.Serial() # Port is usb ports name
 def write_to_arduino(id):
-    arduino.write(bytes(id, 'utf-8'))
+    # arduino.write(bytes(id, 'utf-8'))
     # # time.sleep(0.05)
     # data = arduino.readline()
     print(f"Recieved from arduino: {id}") 
